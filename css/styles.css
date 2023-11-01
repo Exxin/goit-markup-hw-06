@@ -225,6 +225,7 @@ img {
   overflow: auto;
   opacity: 2;
   pointer-events: auto;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-btn {
@@ -897,7 +898,8 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.info-user-name-input:focus {
+.info-user-name-input:focus,
+.info-user-name-input:hover {
   border-color: #4d5ae5;
 }
 
@@ -912,7 +914,10 @@ img {
   margin-bottom: 16px;
 }
 
-.info-user-name-input:focus + .icons-modal-window {
+.info-user-name-input:hover + .icons-modal-window {
+  fill: #4d5ae5;
+}
+.info-user-name-input:focus +.icons-modal-window {
   fill: #4d5ae5;
 }
 
@@ -932,7 +937,8 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-window-textarea:focus {
+.modal-window-textarea:focus,
+.modal-window-textarea:hover {
   border-color: #4d5ae5;
 }
 
