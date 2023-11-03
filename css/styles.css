@@ -970,9 +970,6 @@ img {
   cursor: pointer;
 }
 
-.icon-cneckbox {
-}
-
 .input-modal-window-checkbox:checked + .terms .span-privacy-policy {
   background-color: #404bbf;
   border: none;
